@@ -1,0 +1,323 @@
+/* css reset */
+
+body{
+    padding: 0px 50px 50px 50px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* first section */
+
+.first{
+    box-shadow: 0px 2px 0px gray;
+    padding: 10px 0px;
+    display:flex;
+}
+
+.dropdown{
+    display:none;
+}
+
+.container1{
+    display:flex;
+    align-items: center;
+    flex:30%;
+}
+
+.container1 h1{
+    padding: 0px 0px 0px 10px;
+}
+
+.container1 ul{
+    display:flex;
+    list-style:none;
+}
+
+.container1 ul li a{
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.container1 ul li a:hover{
+    background-color: rgb(54, 53, 53);
+    color: #fff;
+}
+
+.container11{
+    display:flex;
+    flex-wrap:nowrap;
+}
+
+.container11 img{
+    height: 35px;
+    max-width: 35px;
+    padding: 15px;
+}
+
+.container11 svg{
+    padding: 25px 15px ;
+
+}
+
+/* second section */
+
+.second {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+
+/* image .container1    */
+
+.container2{
+    height: 500px;
+    max-width:400px;
+    padding:100px;  
+}
+
+.image1{
+    height: 379px;
+    display:block;
+    border-radius: 10px;
+
+}
+
+.image2{
+    height: 84px;
+    margin: 10px 10px 10px 0px ;
+    border-radius: 10px;    
+}
+
+.img{
+    margin-right: 0;
+}
+
+/* description .container1 */
+
+.container3{
+    height: 400px;
+    max-width:450px;
+    
+}
+
+.container3 h3{
+    color: hsl(26, 100%, 55%);
+    font-size: 1.2rem;
+}
+
+.container3 h1{
+    font-size: 2.4rem;
+    margin: 0px;
+}
+
+/* price section */
+
+.price{
+    display:flex;
+    align-content: center;
+}
+
+.container3 .price .rs{
+    margin:4px;
+    font-size: 1.2rem;
+    font-weight:bold ;
+}
+
+.container3 .price .off{
+    height: min-content;
+    max-width: min-content;
+    margin: 2px 15px;
+    padding:0px;
+    border-radius:2px;
+    background-color: hsl(44, 87%, 70%);
+    border-style: solid;
+    border-width: 2px;
+    border-color: orange;
+    font-size: 10px;
+
+
+} 
+
+.container3 p{
+    line-height: 1.5rem;
+}
+
+.container3 h5{
+    color: hsl(0, 0%, 50%);
+    margin:2px 1px;
+    text-decoration:line-through;
+}
+
+.button1{
+    height:30px;
+    max-width: 100px;
+    margin: 20px 0px;
+}
+
+.button2{
+    height:30px;
+    max-width: 100px;
+    margin: 20px 10px;
+    background-color:hsl(44, 87%, 70%) ;
+    border-style: solid;
+    border-width: 2px;
+    border-color: orange;
+
+}
+
+/* last container */
+
+.attribution{
+    text-align: center;
+
+}
+
+.attribution a{
+    text-decoration:solid;
+}
+
+@media screen and (max-width: 1140px){
+
+    .second{
+        margin-top: 30px;
+    }
+
+    /* image .container1    */
+
+    .container2 {
+        height: 410px;
+        max-width: 330px;
+        padding: 40px;
+    }
+
+    .image1 {
+        height: 280px;
+    }
+
+    .image2 {
+        height: 59px;
+    }
+
+    /* description .container */
+
+    .container3{
+        margin-top: 30px;
+    }
+
+    .container3 h3{
+        font-size: 1rem;
+        margin:10px 0px;
+    }
+
+    .container3 h1{
+        font-size: 1.6rem;
+    }
+
+    .container3 p{
+        line-height: 1.3rem;
+    }
+    /* price section */
+
+    .container3 .price .rs{
+        
+       font-size: 1rem;
+    }
+
+    .container3 p{
+        margin: 10px 0px;
+        font-size: .9rem;
+    }
+
+    .container3 button{
+        margin: 15px 5px;
+    }
+
+}
+
+@media screen and (max-width: 750px){
+
+    body{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    /* first section */
+
+    .container1{
+        justify-content: center;
+    }
+
+    .container1 ul{
+        display: none;
+    }
+
+    /* dropdown section */
+
+    .dropdown{
+        display: initial;
+        position: relative;
+    }
+
+    .dropdown .fas{
+        margin: 20px 5px;
+    }
+
+    .dropdown-menu{
+        position: absolute;
+        display: none;
+        height: 220px;
+        max-width: 200px;
+        background-color: rgba(246, 247, 244, 0.979);
+        box-shadow: 0px 5px 16px 0px gray;
+    }
+
+    .dropdown-menu a{
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-menu a:hover{
+        background-color: rgb(228, 227, 227);
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+      }
+
+      /* second section */
+
+      .second{
+          flex-direction: column;
+      }
+
+      /* container 2 */
+
+      .container2{
+        height: 410px;
+        max-width: 305px;
+        padding: 0px;
+      }
+
+      .image1 {
+        height: 303px;
+      }
+
+      .image2 {
+        height: 65px;
+      }
+
+      /* container 3 */
+
+      .container3 {
+        height: 400px;
+        max-width: 290px;
+        margin-top: 30px;
+      }
+
+      .price{
+          justify-content: center;
+      }
+
+}
